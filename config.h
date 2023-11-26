@@ -25,15 +25,14 @@ typedef struct {
 	const char *name;
 	const void *cmd;
 } Sp;
-//const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "lfub", NULL };
 const char *spcmd1[] = {"st", "-n", "term", NULL };
 const char *spcmd2[] = {"st", "-n", "music", "-e", "ncmpcpp", NULL };
-const char *spcmd3[] = {"gimp", "-n", "idk", NULL };
+const char *spcmd3[] = {"st", "-n", "idk", "-e", "lfub", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"term",     spcmd1},
 	{"music",    spcmd2},
-	{"idk",   spcmd3},
+	{"idk",      spcmd3},
 };
 
 /* tagging */
